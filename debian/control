@@ -1,0 +1,20 @@
+Source: liquidctl
+Section: python
+Priority: optional
+Maintainer: Jonas Malaco <jonas@protocubo.io>
+Build-Depends: debhelper (>= 9), dh-python,
+               python3-all,
+               python3-appdirs,
+               python3-docopt,
+               python3-hid,
+               python3-setuptools,
+               python3-usb,
+Standards-Version: 4.2.0
+Homepage: https://github.com/jonasmalacofilho/liquidctl
+
+Package: python3-liquidctl
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends},
+Recommends: ${python3:Recommends}
+Suggests: ${python3:Suggests}
+Description: Cross-platform tool and drivers for liquid coolers and other devices
